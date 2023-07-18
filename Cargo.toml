@@ -1,0 +1,12 @@
+[package]
+name = "wasmtest"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.dev]
+opt-level="s" # optimize for size
+
+[dependencies]
